@@ -1,0 +1,8 @@
+version: '3'
+services:
+  qa:
+    image: "plantdaddy/test-tools"
+    volumes:
+      - type: bind
+        source: ~/.ssh
+        target: /root/.ssh
