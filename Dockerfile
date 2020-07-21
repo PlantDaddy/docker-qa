@@ -11,7 +11,9 @@ RUN apk add zsh \
             openssh \
             musl-dev \
             openssl \
-            openssl-dev
+            openssl-dev \
+            xvfb \
+            xvfb-run
 RUN pip install --upgrade pip
 RUN pip install cffi \
                  robotframework \
@@ -26,4 +28,14 @@ RUN pip install cffi \
                  jenkinsapi \
                  docker \
                  psutil \
-                 python-dotenv
+                 python-dotenv \
+                 jinja2 \
+                 robotframework-debuglibrary \
+                 robotframework-imaplibrary \
+                 robotframework-requestslibrary \
+                 paho-mqtt \
+                 deepdiff \
+                 pdfminer \
+                 jsonref \
+                 pexpect \
+                 
