@@ -26,4 +26,4 @@ RUN pip install cffi \
                  jenkinsapi \
                  docker \
                  psutil \
-                 dotenv
+                 python-dotenv
