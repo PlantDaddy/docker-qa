@@ -12,8 +12,8 @@ RUN apk add zsh \
             musl-dev \
             openssl \
             openssl-dev
-RUN pip3 install --upgrade pip
-RUN pip3 install cffi \
+RUN pip install --upgrade pip
+RUN pip install cffi \
                  robotframework \
                  robotframework-crypto \
                  python-dateutil \
@@ -25,4 +25,5 @@ RUN pip3 install cffi \
                  jira \
                  jenkinsapi \
                  docker \
-                 psutil
+                 psutil \
+                 dotenv
