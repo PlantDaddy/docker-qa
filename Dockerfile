@@ -32,10 +32,10 @@ RUN pip install cffi \
                  jinja2 \
                  robotframework-debuglibrary \
                  robotframework-imaplibrary \
-                 robotframework-requestslibrary \
+                 robotframework-requests \
                  paho-mqtt \
                  deepdiff \
                  pdfminer \
                  jsonref \
-                 pexpect \
-                 
+                 pexpect
+
