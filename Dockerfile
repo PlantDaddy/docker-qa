@@ -24,4 +24,5 @@ RUN pip3 install cffi \
                  oauth2client \
                  jira \
                  jenkinsapi \
-                 docker
+                 docker \
+                 psutil
