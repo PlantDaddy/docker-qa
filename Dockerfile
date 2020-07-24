@@ -14,8 +14,6 @@ RUN apk add zsh \
             openssl-dev \
             xvfb \
             xvfb-run \
-            glibc \
-            glibc-run \
             firefox-esr
 RUN pip install --upgrade pip
 RUN pip install cffi \
