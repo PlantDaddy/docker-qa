@@ -14,7 +14,15 @@ RUN apk add zsh \
             openssl-dev \
             xvfb \
             xvfb-run \
-            firefox-esr
+            curl
+RUN curl -Lo /etc/apk/keys/sgerrand.rsa.pub https://alpine-pkgs.sgerrand.com/sgerrand.rsa.pub
+RUN curl -LO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.31-r0/glibc-2.31-r0.apk
+RUN curl -LO https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.31-r0/glibc-bin-2.31-r0.apk
+RUN apk add glibc-2.31-r0.apk
+RUN apk add glibc-bin-2.31-r0.apk
+RUN apk add firefox-esr
+RUN curl -LO https://github.com/mozilla/geckodriver/releases/download/v0.26.0/geckodriver-v0.26.0-linux64.tar.gz
+RUN tar -zxf geckodriver-v0.26.0-linux64.tar.gz -C /usr/bin
 RUN pip install --upgrade pip
 RUN pip install cffi \
                  robotframework \
