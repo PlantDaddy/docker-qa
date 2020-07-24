@@ -13,7 +13,10 @@ RUN apk add zsh \
             openssl \
             openssl-dev \
             xvfb \
-            xvfb-run
+            xvfb-run \
+            glibc \
+            glibc-run \
+            firefox-esr
 RUN pip install --upgrade pip
 RUN pip install cffi \
                  robotframework \
@@ -33,9 +36,13 @@ RUN pip install cffi \
                  robotframework-debuglibrary \
                  robotframework-imaplibrary \
                  robotframework-requests \
+                 robotframework-seleniumlibrary \
                  paho-mqtt \
                  deepdiff \
                  pdfminer \
                  jsonref \
-                 pexpect
-
+                 pexpect \
+                 selenium \
+                 chromedriver-py \
+                 termcolor \
+                 jsonschema
